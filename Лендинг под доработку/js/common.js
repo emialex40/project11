@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+	$('#bid_date1').datepicker($.datepicker.regional["ru"]);
+	$('#bid_date2').datepicker($.datepicker.regional["ru"]);
+
 	function leftToggle() {
 		var left = $('.hide__block-left');
 

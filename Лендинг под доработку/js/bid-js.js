@@ -27,6 +27,8 @@ $('#bid_price').blur(function() {
 			$('#bid_ct').val(city);
 		}
 	});
+
+
 	var obj = [];
 function formCollector() {
 	var bidFirm = $('#bid_firm').val();
