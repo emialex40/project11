@@ -1,0 +1,93 @@
+div.clear {
+    clear: both;
+    width: 100%;
+}
+
+#bbe_form_registration .required label {
+    position: relative;
+}
+
+#bbe_form_registration .required label:before {
+    content: "*";
+    color: #ff4f6a;
+    position: absolute;
+    top: 0px;
+    right: -9px;
+    font-size: 16px;
+}
+
+#registration_select_modal .modal-title,
+#registration_modal .modal-title {
+    color: #494da1;
+}
+
+#registration_select_modal .modal-header p,
+#registration_modal .modal-header p{
+    margin-bottom: 0px;
+}
+
+#registration_select_modal .btn-primary,
+#registration_modal .btn-primary {
+    background-image: -webkit-linear-gradient(top,#3fde45 0,#298e3b 100%);
+    background-image: -o-linear-gradient(top,#3fde45 0,#298e3b 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#3fde45),to(#298e3b));
+    background-image: linear-gradient(to bottom,#3fde45 0,#298e3b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3fde45', endColorstr='#298e3b', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #2a691b;
+}
+
+#registration_select_modal .btn-primary:hover,
+#registration_modal .btn-primary:hover,
+#registration_select_modal .btn-primary:focus,
+#registration_modal .btn-primary:focus {
+    background-color: #26882c;
+    background-position: 0 -15px;
+}
+
+.error-container {
+    display: none;
+}
+
+.has-error.view-error .error-container {
+    display: block;
+    margin-bottom: 0px;
+}
+
+#bbe_form_registration_grecaptcha {
+    float: left;
+}
+
+#bbe_form_registration_grecaptcha.has-error {
+    outline: 1px solid #a94442;
+}
+
+.message-container {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    z-index: 20;
+    text-align: center;
+}
+
+.modal-header {
+    padding-top: 5px;
+    font-size: 0.9em;
+}
+
+.modal-dialog {
+    font-size: 0.9em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    height: 30px;
+}
+
+.modal-open {
+    padding-right: 0 !important;
+}
+

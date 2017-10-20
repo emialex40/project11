@@ -1,0 +1,264 @@
+html {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+body {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+div {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+span {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+applet {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+object {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+iframe {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h1 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h2 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h3 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h4 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h5 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h6 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+p {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+blockquote {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+pre {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+a {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+abbr {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+acronym {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+address {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+big {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+cite {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+code {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+del {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dfn {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+em {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+font {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+img {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+ins {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+kbd {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+q {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+s {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+samp {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+small {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+strike {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+strong {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+sub {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+sup {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tt {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+var {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dl {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dt {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dd {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+ol {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+ul {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+li {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+fieldset {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+form {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+label {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+legend {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+table {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+caption {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tbody {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tfoot {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+thead {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tr {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+th {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+td {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+body {
+	background: white; color: black;/*line-height: 1.1;*/
+}
+ol {
+	list-style: none;
+}
+ul {
+	list-style: none;
+}
+h1 {
+	font-family: Tahoma, Segoe UI, Verdana, Helvetica, Arial, sans-serif;
+}
+h2 {
+	font-family: Tahoma, Segoe UI, Verdana, Helvetica, Arial, sans-serif;
+}
+html {
+	background: url("../imgs/bkg-html.jpg") repeat-x rgb(230, 230, 230); height: 100%;
+}
+body {
+	height: 100%; color: rgb(75, 75, 75); font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif; font-size: 0.78em;
+}
+a:link {
+	color: rgb(31, 92, 161); text-decoration: none;
+}
+a:visited {
+	color: rgb(31, 92, 161); text-decoration: none;
+}
+a:hover {
+	color: rgb(0, 98, 160); text-decoration: underline;
+}
+#old {
+	margin: auto; width: 783px;
+}
+#header {
+	padding: 10px 20px 20px; width: 744px; text-align: justify;
+}
+#header h1 {
+	margin: 0px 0px 10px; text-align: center; font-size: 20pt; font-weight: normal;
+}
+#header font {
+	font-size: 10pt;
+}
+#modern-browser {
+	list-style: none; margin: 0px; padding: 10px 20px 20px;
+}
+#modern-browser li {
+	padding-left: 130px; margin-top: 20px;
+}
+#modern-browser li.ie8 {
+	background: url("../imgs/big-ie8.gif") no-repeat 5px top;
+}
+#modern-browser li.chrome {
+	background: url("../imgs/big-chrome.gif") no-repeat 15px top;
+}
+#modern-browser li.opera {
+	background: url("../imgs/big-opera.gif") no-repeat left top;
+}
+#modern-browser li.firefox {
+	background: url("../imgs/big-firefox.gif") no-repeat 10px top;
+}
+#modern-browser h2 {
+	margin: 0px 0px 10px 10px; font-weight: bold;
+}
+#modern-browser .file {
+	list-style: none; margin: 10px 0px 0px; padding: 0px;
+}
+#modern-browser .file li {
+	margin: 0px; padding: 2px 0px 2px 22px;
+}
+#modern-browser .file li.microsoft {
+	background: url("../imgs/fav-ie.gif") no-repeat left;
+}
+#modern-browser .chrome .file li {
+	background: url("../imgs/fav-chrome.gif") no-repeat left;
+}
+#modern-browser .opera .file li {
+	background: url("../imgs/fav-opera.gif") no-repeat left;
+}
+#modern-browser .firefox .file li {
+	background: url("../imgs/fav-firefox.gif") no-repeat left;
+}
+.descriptiontext {
+	margin: 15px; text-align: justify; font-size: 10pt;
+}
+.descriptiontext .file {
+	text-indent: 1.5em;
+}
+.delim {
+	border-width: 0px; height: 1px; background-color: silver;
+}

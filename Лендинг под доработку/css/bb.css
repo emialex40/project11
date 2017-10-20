@@ -1,0 +1,1432 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: auto;
+    -webkit-user-drag: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.dhx_drag_over {
+  background-color: #EEEFFE;
+  background-image: none;
+}
+
+.bb_photoreport_copy {
+    background-color:#f1f1f1;;
+}
+
+.dhx_drag_over .bb_photoreport_copy {
+    background-color: #EEEFFE;
+}
+
+/*******************************************************/
+/* main header and footer */
+/*******************************************************/
+.text_block {
+    font-family: Tahoma;
+    font-size: 12px;
+    padding: 5px 10px;
+    height: 70px;
+    border: 1px solid #a4bed4;
+    background-color: white;
+}
+
+/*******************************************************/
+/* отступы для ячеек лайоута */
+/*******************************************************/
+.dhxlayout_base_dhx_web div.dhx_cell_layout div.dhx_cell_cont_layout {
+  padding: 0px !important;
+}
+
+.dhxlayout_base_dhx_web div.dhxlayout_collapsed_v div.dhx_cell_hdr_text {
+    font-weight: bold !important;
+}
+
+
+.dhxlayout_base_dhx_web div.dhxlayout_collapsed_v div.dhx_cell_hdr_text {
+    display: inline-block;
+    padding: 3px 30px 0px 12px;
+}
+
+.dhxlayout_base_dhx_web div.dhxlayout_collapsed_v .flt_modified div.dhx_cell_hdr_text {
+    background: fuchsia;
+}
+.dhxlayout_base_dhx_web div.dhxlayout_collapsed_v div.dhx_cell_hdr_text i{
+    color: #bfd1db;
+    padding: 3px 6px 3px 3px;
+}
+
+.dhxlayout_base_dhx_web div.dhxlayout_collapsed_v .flt_modified div.dhx_cell_hdr_text i{
+    cursor: pointer;
+    color: white;
+}
+
+
+/*******************************************************/
+/* статус грида */
+/*******************************************************/
+.dhxwins_vp_dhx_web div.dhxwin_active div.dhx_cell_wins div.status_grid div.dhx_cell_statusbar_text {
+  position: relative !important;
+  padding: 0px 4px !important;
+  height: 21px !important;
+  line-height: 21px !important;
+  border: 0 !important;
+  border-bottom: 1px solid #c7c7c7 !important;
+  border-left: 1px solid #c7c7c7 !important;
+  border-right: 1px solid #c7c7c7 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+}
+
+/*******************************************************/
+/* статус фото */
+/*******************************************************/
+.dhxwins_vp_dhx_web div.dhxwin_active div.dhx_cell_wins div.photo_view div.dhx_cell_statusbar_text {
+    margin: 0px 5px 5px 5px !important;
+}
+
+/*******************************************************/
+/* статус РМ */
+/*******************************************************/
+.dhxwins_vp_dhx_web div.dhxwin_active div.dhx_cell_wins div.place_detail div.dhx_cell_statusbar_text {
+    margin-top: 5px !important;
+}
+.dhxwin_active.dhxlayout_base_dhx_web div.dhx_cell_wins div.place_detail div.dhxcont_statusbar,
+.dhxwin_active.dhxlayout_base_dhx_web div.dhx_cell_wins div.photo_view div.dhx_cell_statusbar_text{
+    border: 1px solid white !important;
+    background-color: white !important;
+}
+
+/*******************************************************/
+/* статус Custs */
+/*******************************************************/
+.dhxwins_vp_dhx_web div.dhxwin_active div.dhx_cell_wins div.cust_detail div.dhx_cell_statusbar_text {
+    margin-top: 5px !important;
+}
+
+/*******************************************************/
+/* отступы для тулбара */
+/*******************************************************/
+.dhxlayout_base_dhx_web div.dhx_cell_layout div.dhx_cell_toolbar_def,
+.dhxlayout_base_dhx_web div.dhx_cell_layout div.dhx_cell_toolbar_no_borders {
+    position: relative;
+    overflow: hidden;
+    padding: 1px 0px 0px 0px;
+    border-left: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+}
+
+.dhxwins_vp_dhx_web div.dhxwin_active div.dhx_cell_wins div.dhx_cell_toolbar_def,
+.dhxwins_vp_dhx_web div.dhxwin_active div.dhx_cell_wins div.dhx_cell_toolbar_no_borders,
+.dhxwins_vp_dhx_web div.dhxwin_inactive div.dhx_cell_wins div.dhx_cell_toolbar_def,
+.dhxwins_vp_dhx_web div.dhxwin_inactive div.dhx_cell_wins div.dhx_cell_toolbar_no_borders{
+    position: relative;
+    overflow: hidden;
+    padding: 1px 0 0 0;
+    border-width: 0px;
+}
+
+/*******************************************************/
+/* отстутпы блоков везде */
+/*******************************************************/
+.dhxwins_vp_dhx_web div.dhxwin_active div.dhx_cell_wins div.dhx_cell_cont_wins,
+.dhxwins_vp_dhx_web div.dhxwin_inactive div.dhx_cell_wins div.dhx_cell_cont_wins {
+    position: absolute;    
+    padding: 1px; 
+    border: 3px solid #ffffff;
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.dhxtabbar_base_dhx_web div.dhx_cell_tabbar div.dhx_cell_cont_tabbar {
+    position: absolute;
+    border-left: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 3px;
+    border-top: 0px solid #ffffff;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.dhxtabbar_base_dhx_web div.dhxtabbar_tabs div.dhxtabbar_tab:hover div.dhxtabbar_tab_text {
+  color: #737cdd;
+}
+
+/*******************************************************/
+.dhx_cell_hdr {
+    border-top: 1px;
+    border-top-color: white;
+    border-top-style: solid;
+}
+
+.bb_closeBtn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 0px;
+    padding: 1px 2px 1px 3px;
+    cursor: pointer;
+}
+
+.bb_closeBtn i {
+    margin: 2px;
+    padding-top: 4px;
+    width: 25px;
+    height: 19px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.bb_closeBtn i:hover {
+  background-color: #959ce9;
+}
+
+/*******************************************************/
+/* отступы для форм */
+/*******************************************************/
+.dhxform_obj_dhx_web div.fs_dhxform_item_label_left fieldset.dhxform_fs div.dhxform_base_nested.dhxform_fs_nested,
+.dhxform_obj_dhx_web div.fs_dhxform_item_label_right fieldset.dhxform_fs div.dhxform_base_nested.dhxform_fs_nested {
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+}
+
+.dhxform_obj_dhx_web div.dhxform_item_label_left {
+    padding-top: 5px!important;
+}
+
+
+/*******************************************************/
+/* доработки главного меню  */
+/*******************************************************/
+nav .menu li.menuseparate {
+    border-left: 1px #737cdd solid;
+}
+
+/*******************************************************/
+/* кнопки с иконками */
+/*******************************************************/
+div.dhtmlxMenu_dhx_web_SubLevelArea_Polygon table.dhtmlxMebu_SubLevelArea_Tbl td.sub_item_icon i {
+  color: #737cdd;
+}
+
+div.dhtmlxMenu_dhx_web_SubLevelArea_Polygon table.dhtmlxMebu_SubLevelArea_Tbl td.sub_item_icon.immediate i {
+  color: fuchsia ;
+}
+
+div.dhtmlxMenu_dhx_web_SubLevelArea_Polygon table.dhtmlxMebu_SubLevelArea_Tbl td.sub_item_icon.brown i {
+  color: brown ;
+}
+
+div.dhxform_item_label_left.button_noicon div.dhxform_btn_txt {
+    padding-left: 0px !important;
+}
+
+div.dhxform_item_label_left div.dhxform_btn_txt{
+  padding-left: 10px;
+}
+
+div.dhxform_item_label_left.button_save div.dhxform_btn_txt:before,
+div.button_save div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f00c";
+}
+div.dhxform_item_label_left.button_save.disabled div.dhxform_btn_txt:before,
+div.button_save.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_plus div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f016";
+}
+div.dhxform_item_label_left.button_plus.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+
+div.dhxform_item_label_left.button_next div.dhxform_btn_txt:before,
+div.button_next div.dhxform_btn_txt:before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f061";
+}
+div.dhxform_item_label_left.button_next.disabled div.dhxform_btn_txt:before,
+div.button_next.disabled div.dhxform_btn_txt:before{
+  color: #999;
+}
+
+
+div.dhxform_item_label_left.button_prev div.dhxform_btn_txt:before,
+div.button_prev div.dhxform_btn_txt:before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f060";
+}
+div.dhxform_item_label_left.button_prev.disabled div.dhxform_btn_txt:before,
+div.button_prev.disabled div.dhxform_btn_txt:before{
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_ok div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f00c";
+}
+div.dhxform_item_label_left.button_ok.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_clear div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f0ad";
+}
+div.dhxform_item_label_left.button_clear.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_cancel div.dhxform_btn_txt:before,
+div.button_cancel div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f00d";
+}
+div.dhxform_item_label_left.button_cancel.disabled div.dhxform_btn_txt:before,
+div.button_cancel.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_download div.dhxform_btn_txt:before,
+div.button_download div.dhxform_btn_txt:before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f019";
+}
+div.dhxform_item_label_left.button_download.disabled div.dhxform_btn_txt:before,
+div.button_download.disabled div.dhxform_btn_txt {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_floppy div.dhxform_btn_txt:before,
+div.button_floppy div.dhxform_btn_txt:before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f0c7";
+}
+
+div.small.button_floppy div.dhxform_btn_txt:before {
+    top: 0px;
+    left: 5px;
+}
+
+div.dhxform_item_label_left.button_floppy.disabled div.dhxform_btn_txt:before,
+div.button_floppy.disabled div.dhxform_btn_txt {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_settings div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f0ad";
+}
+div.dhxform_item_label_left.button_settings.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_reload div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f021";
+}
+div.dhxform_item_label_left.button_reload.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_undo div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f0e2";
+}
+div.dhxform_item_label_left.button_undo.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_book div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f02d";
+}
+div.dhxform_item_label_left.button_book.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_folder div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f115";
+}
+div.dhxform_item_label_left.button_folder.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_interface1 div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f041";
+}
+div.dhxform_item_label_left.button_interface1.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+div.dhxform_item_label_left.button_interface2 div.dhxform_btn_txt:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f0a1";
+}
+div.dhxform_item_label_left.button_interface2.disabled div.dhxform_btn_txt:before {
+  color: #999;
+}
+
+
+
+div.dhxform_item_label_left.button_reject div.dhxform_btn_txt:before,
+div.button_reject div.dhxform_btn_txt:before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f165";
+}
+div.dhxform_item_label_left.button_reject.disabled div.dhxform_btn_txt:before,
+div.button_reject.disabled div.dhxform_btn_txt:before{
+  color: #999;
+}
+
+
+div.dhxform_item_label_left.button_confirm div.dhxform_btn_txt:before,
+div.button_confirm div.dhxform_btn_txt:before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f164";
+}
+
+div.dhxform_item_label_left.button_confirm.disabled div.dhxform_btn_txt:before,
+div.button_confirm.disabled div.dhxform_btn_txt:before{
+  color: #999;
+}
+
+div.dhxform_item_label_left.button_camera div.dhxform_btn_txt:before,
+div.button_camera div.dhxform_btn_txt:before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    content: "\f030";
+}
+
+div.dhxform_item_label_left.button_camera.disabled div.dhxform_btn_txt:before,
+div.button_camera.disabled div.dhxform_btn_txt:before{
+  color: #999;
+}
+
+/***********************************************************/
+
+div.ccPhotoBuilderList div.dhx_list{
+    border: 1px solid #d6d6d6;
+    background-color:white;
+}
+
+/***************************************************/
+/* параметры диалога - для  высоты диалога в 400 px*/
+/***************************************************/
+.dhtmlx_popup_text {
+    max-height: 300px;
+    overflow: auto !important;
+}
+
+/****************************************************/
+/* подсветка кнопки закрытия модуля */
+/****************************************************/
+.module_button_close:hover {
+    background-position-y: 0px!important;
+}
+
+.module_button_close {
+    background-image: url(../codebase/imgs/dhxwins_web/dhxwins_buttons.gif)!important;
+    background-position-x :-15px!important;
+    background-position-y :-15px!important;
+}
+
+/****************************************************/
+/* вывод фото РМ */
+/****************************************************/
+.dhx_dataview_placephoto_item,
+.dhx_dataview_placephoto_item_selected {
+    background-color: #fff;
+    border-right: none;
+    border-bottom: none;
+    text-decoration: none !important;
+}
+
+.dhx_dataview .dhx_dataview_placephoto_item a,
+.dhx_dataview .dhx_dataview_placephoto_item_selected a{
+    text-decoration: none !important;
+}
+
+.dhx_dataview_reportphoto_item_selected div {
+    background-color: #959ce9 !important;
+}
+
+
+/****************************************************/
+/* вывод данных РМ */
+/****************************************************/
+/*.dhx_dataview_reportdata_item_selected div {
+    background-color: #EEEFFE !important;
+}*/
+
+.dhx_dataview_reportdata_item div.datacell {
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+}
+
+.dhx_dataview_reportdata_item div.datacell.enabled b {
+    color: #305f87;
+}
+
+.dhx_dataview_reportdata_item div.datacell.disabled b {
+    color: gray;
+}
+
+.dhx_dataview_reportdata_item_selected div.datacell {
+    border-bottom: 1px solid rgb(115, 124, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+}
+
+
+/*********************************************************************/
+/* dataview Заявок клиентов */
+/*********************************************************************/
+.dhx_dataview_ccdetail_item div.datacell {
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+}
+
+.dhx_dataview_ccdetail_item div.datacell table,
+.dhx_dataview_ccdetail_item_selected div.datacell table{
+    border-spacing: 0;
+    line-height: 1.4em;
+    white-space: nowrap;
+}
+
+.dhx_dataview_ccdetail_item div.datacell i,
+.dhx_dataview_ccdetail_item_selected div.datacell i {
+    display: inline;
+    font-size: 1.3em;
+}
+.dhx_dataview_ccdetail_item div.datacell.disabled,
+.dhx_dataview_ccdetail_item div.datacell.disabled i,
+.dhx_dataview_ccdetail_item div.datacell th.disabled i,
+.dhx_dataview_ccdetail_item div.datacell th.disabled,
+.dhx_dataview_ccdetail_item_selected div.datacell.disabled,
+.dhx_dataview_ccdetail_item_selected div.datacell.disabled i,
+.dhx_dataview_ccdetail_item_selected div.datacell th.disabled i,
+.dhx_dataview_ccdetail_item_selected div.datacell th.disabled{
+    color:gray !important;
+}
+.dhx_dataview_ccdetail_item div.datacell.enabled b,
+.dhx_dataview_ccdetail_item_selected div.datacell.enabled b{
+    color: #305f87;
+}
+.dhx_dataview_ccdetail_item div.datacell.enabled th,
+.dhx_dataview_ccdetail_item_selected div.datacell.enabled th,
+.dhx_dataview_ccdetail_item div.datacell.disabled th,
+.dhx_dataview_ccdetail_item_selected div.datacell.disabled th{
+    padding: 2px 0 2px 0;
+    font-weight: normal;
+}
+.dhx_dataview_ccdetail_item div.datacell th.enabled,
+.dhx_dataview_ccdetail_item_selected div.datacell th.enabled{
+    color: white;
+}
+.dhx_dataview_ccdetail_item div.datacell i,
+.dhx_dataview_ccdetail_item_selected div.datacell i{
+    padding: 2px 5px 2px 5px;    
+}
+.dhx_dataview_ccdetail_item div.datacell.enabled i,
+.dhx_dataview_ccdetail_item_selected div.datacell.enabled i{
+    color: #737cdd;
+}
+.dhx_dataview_ccdetail_item div.datacell table i,
+.dhx_dataview_ccdetail_item_selected div.datacell table i{
+    padding: 1px 6px 3px 7px;    
+}
+.dhx_dataview_ccdetail_item div.datacell table th.enabled i,
+.dhx_dataview_ccdetail_item_selected div.datacell table th.enabled i{
+    color: white;
+}
+.dhx_dataview_ccdetail_item div.datacell th.enabled:hover:not(:first-child),
+.dhx_dataview_ccdetail_item_selected div.datacell th.enabled:hover:not(:first-child),
+.dhx_dataview_ccdetail_item div.datacell table th.enabled i:hover,
+.dhx_dataview_ccdetail_item_selected div.datacell table th.enabled i:hover{
+    background-color: #737cdd;
+}
+.dhx_dataview_ccdetail_item div.datacell th.enabled,
+.dhx_dataview_ccdetail_item_selected div.datacell th.enabled{
+    background-color: #959ce9;
+}
+.dhx_dataview_ccdetail_item div.datacell th.disabled,
+.dhx_dataview_ccdetail_item_selected div.datacell th.disabled{
+    background-color: #E8E8E8;
+}
+.dhx_dataview_ccdetail_item div.datacell th:first-child,
+.dhx_dataview_ccdetail_item div.datacell td:first-child,
+.dhx_dataview_ccdetail_item_selected div.datacell th:first-child,
+.dhx_dataview_ccdetail_item_selected div.datacell td:first-child{
+    width : 52px;
+}
+.dhx_dataview_ccdetail_item div.datacell th,
+.dhx_dataview_ccdetail_item div.datacell td,
+.dhx_dataview_ccdetail_item_selected div.datacell th,
+.dhx_dataview_ccdetail_item_selected div.datacell td{
+    width : 44px;
+    text-align: center;
+    border-bottom: 1px solid #d6d6d6;;
+    border-left: 1px solid #d6d6d6;;
+}
+.dhx_dataview_ccdetail_item div.datacell th:last-child,
+.dhx_dataview_ccdetail_item div.datacell td:last-child,
+.dhx_dataview_ccdetail_item_selected div.datacell th:last-child,
+.dhx_dataview_ccdetail_item_selected div.datacell td:last-child{
+    border-right: 1px solid #d6d6d6;;
+}
+.dhx_dataview_ccdetail_item div.datacell th,
+.dhx_dataview_ccdetail_item_selected div.datacell th{
+   border-top: 1px solid #d6d6d6;;
+}
+.ccDocDetailView div.dhxdataview_placeholder:nth-child(even) div.datacell {
+    background-color: #EEEFFE !important;
+}
+.ccPhotoView div.dhxdataview_placeholder:nth-child(even) div.datacell {
+    background-color: #EEEFFE !important;
+}
+.dhx_dataview_ccdetail_item_selected div.datacell {
+    border: 1px solid rgb(115, 124, 221);    
+}
+.dhx_dataview_ccdetail_item div.datacell {
+    border: 1px solid transparent;
+}
+
+.ccDetailAddress {
+    display: inline-block;
+    overflow: hidden;
+    height: 16px;
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.ccDetailStatus {
+    display: inline-block;
+    overflow: hidden;
+    height: 16px;
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 160px;
+}
+
+/****************************************************/
+/* вывод фотоотчёта рекламодеталя */
+/****************************************************/
+.ccphoto_input {   
+  background-color: transparent;
+  margin: 0;
+  padding: 2px 4px 3px 4px;
+  font-family: Tahoma;
+  font-size: 12px;
+  color: #000000;
+  line-height: normal;
+  direction: ltr;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.dhx_dataview_ccdetail_item_selected div.datacell .ccphoto_input {
+    border: 1px solid #d6d6d6;
+    background-color: white !important;
+}
+
+div.datacell div.dhxform_btn {
+  display: inline-block;
+  margin: 1px 2px;
+  background-color: #959ce9;
+  cursor: default;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  font-family: Tahoma;
+  font-size: inherit;
+  color: #ffffff;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+div.datacell div.dhxform_btn:hover {
+  background-color: #7e86dc;
+}
+div.datacell div.dhxform_btn.disabled {
+  background-color: #f2f2f2;
+  color: #999;
+}
+div.datacell div.dhxform_btn_txt{
+  padding-left: 25px;
+}
+div.datacell div.dhxform_btn.small {
+  height: 17px;
+  margin: 0px;
+}
+div.datacell div.dhxform_btn.default {
+  height: 24px;
+  line-height: 23px;
+}
+
+
+.ccPhotoAddress {
+    display: inline-block;
+    width: 455px;
+    overflow: hidden;
+    height: 16px;
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dhx_dataview_ccdetail_item div.datacell table.ccPhotoTable,
+.dhx_dataview_ccdetail_item_selected div.datacell table.ccPhotoTable {
+  border:0;
+  width: 100%;
+  table-layout:fixed;
+}
+
+.dhx_dataview_ccdetail_item div.datacell table.ccPhotoTable td,
+.dhx_dataview_ccdetail_item_selected div.datacell table.ccPhotoTable td{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dhx_dataview_ccdetail_item div.datacell table.ccPhotoTable th,
+.dhx_dataview_ccdetail_item div.datacell table.ccPhotoTable td,
+.dhx_dataview_ccdetail_item_selected div.datacell table.ccPhotoTable th,
+.dhx_dataview_ccdetail_item_selected div.datacell table.ccPhotoTable td{
+    text-align: left;
+    border:0;
+}
+
+
+.ccPhotoCancelReason {
+    vertical-align: top; 
+    display: inline-block; 
+    width: 367px;
+    overflow: hidden; 
+    height: 19px; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+
+/****************************************************/
+/* вывод файлов Договоров */
+/****************************************************/
+.dhx_list_contractfile_item_selected,
+.dhx_list_contractfile_item{
+    background-color: #fff;
+    border-right: none;
+    border-bottom: none;
+    text-decoration: none !important;
+    border: 1px solid #c7c7c7;
+}
+
+/****************************************************/
+/* загрузка файлов */
+/****************************************************/
+.bb_upload_container div.dhx_upload_controls {
+    display: none !important;
+}
+
+.bb_upload_container div.dhx_file_uploader {
+    height: 25px !important;
+    overflow-y: auto  !important;
+}
+
+
+.bb_upload_small_container div.dhx_upload_controls {
+    display: none !important;
+}
+
+.bb_upload_small_container div.dhx_file_uploader {
+    height: 25px !important;
+    overflow-y: auto  !important;
+}
+
+.bb_upload_small_container div.dhx_file_name {
+    display:none;
+}
+
+.bb_upload_contract div.dhx_upload_controls {
+    display: none !important;
+}
+
+.bb_upload_contract div.dhx_file_uploader {
+    height: 25px !important;
+    overflow-y: auto  !important;
+}
+
+/****************************************************/
+.bb_upload_import div.dhx_upload_files div.dhx_file_param.dhx_file_name {
+    left: 5px !important;
+}
+
+.bb_upload_import div.dhx_upload_files div.dhx_file_param.dhx_file_progress {
+    right: 25px !important;
+}
+
+.bb_upload_import div.dhx_upload_files div.dhx_file_param.dhx_file_delete {
+    right: 5px !important;
+}
+
+.bb_upload_import div.dhx_upload_controls div.dhx_file_uploader_button.button_clear {
+    right: 0px !important;
+}
+
+.bb_upload_import div.dhx_upload_controls div.dhx_file_uploader_button.button_upload,
+.bb_upload_import div.dhx_upload_controls div.dhx_file_uploader_button.button_cancel{
+    right: 30px !important;
+}
+
+.bb_upload_import div.dhx_upload_controls div.dhx_file_uploader_button.button_browse {
+    right: 60px !important;
+}
+
+.bb_upload_import div.dhx_upload_controls div.dhx_file_uploader_button.button_info{
+  left:30px !important; 
+}
+
+.bb_upload_import div.dhx_upload_files {
+    display: block !important;
+    max-height: 90px !important;
+}
+
+
+/****************************************************/
+.bb_upload_photo_list div.dhx_upload_controls {
+    top: 40px
+}
+
+.bb_upload_photo_list .button_info {
+    width: 160px !important;
+}
+
+.bb_upload_photo_list .bb_upload_photo_list div.dhx_file_param.dhx_file_name {
+    left: 10px;
+    width: 180px !important;
+}
+
+.bb_upload_photo_list .bb_upload_photo_list div.dhx_file_param.dhx_file_progress {
+    right: 10px !important;
+}
+
+
+.bb_upload_photo_list div.dhx_file_uploader {
+    height: 160px !important;
+    overflow-y: auto  !important;
+}
+
+
+/****************************************************/
+.bb_upload_photo_doc div.dhx_upload_controls {
+    display: none !important;
+}
+
+.bb_upload_photo_doc div.dhx_file_uploader {
+    height: 120px !important;
+    overflow-y: auto  !important;
+}
+
+
+
+/****************************************************/
+/* формы */
+/****************************************************/
+.dhxform_obj_dhx_web .dotted_line div.dhxform_txt_label2 {
+    border-bottom-width: 1px!important;
+    border-bottom-style: dotted !important;
+    margin: 3px 3px  !important;
+    padding: 2px 0  !important;
+}
+
+.dhxform_obj_dhx_web .inline_block div.dhxform_txt_label2 {
+    display:inline-block !important;
+    margin-bottom: 2px !important;
+    margin-top: 5px !important;
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.dhxform_obj_dhx_web div.disabled div.dhxform_label,
+.dhxform_obj_dhx_web div.disabled div.dhxform_label div.dhxform_label_nav_link,
+.dhx_dataview_ccdetail_item div.datacell.disabled div.dhxform_obj_dhx_web b,
+.dhx_dataview_ccdetail_item_selected div.datacell.disabled div.dhxform_obj_dhx_web b,
+.dhxform_obj_dhx_web div.disabled div.dhxform_label span.dhxform_item_required {
+    color: gray !important;
+}
+
+div.dhxcombo_dhx_web.dhxcombo_disabled,
+div.dhxcombo_dhx_web.dhxcombo_disabled input.dhxcombo_input,
+.dhxform_obj_dhx_web div.disabled .dhxform_textarea {
+    color: black !important;
+    background-color: #E8E8E8 !important;
+}
+
+.dhxform_obj_dhx_web div .warning,
+.dhxform_obj_dhx_web div.disabled .warning {
+    color: black !important;
+    background-color: violet !important;
+}
+
+.dhxform_obj_dhx_web div.disabled .dhxform_textarea {
+    border: 1px solid #ccc  !important;
+}
+
+
+.dhxform_obj_dhx_web div.form_label_brown div.dhxform_label,
+.dhxform_obj_dhx_web div.form_label_brown div.dhxform_txt_label2{
+    font-weight: bold !important;
+    color: white !important;
+}
+.dhxform_obj_dhx_web div.dhxform_label,
+.dhxform_obj_dhx_web div.dhxform_txt_label2{
+    font-weight: bold !important;
+    color: #305f87;
+}
+
+.dhxform_obj_dhx_web div.dhxform_label,
+.dhxform_obj_dhx_web div.dhxform_txt_label2{
+    font-weight: bold !important;
+    color: #305f87;
+}
+
+.dhxform_obj_dhx_web fieldset.dhxform_fs legend.fs_legend {
+    font-weight: bold !important;
+    color: #305f87;
+}
+
+.dhxform_obj_dhx_web div.dhxform_item_label_left.form_label_white label {
+    color: white !important;
+}
+
+.dhxform_obj_dhx_web div.fs_dhxform_item_label_left.form_label_brown fieldset.dhxform_fs legend.fs_legend{
+    color: #f8c9b9 !important;
+}
+
+
+
+
+.dhxform_obj_dhx_web .validate_warning .dhxform_label,
+.dhxform_obj_dhx_web .validate_warning .dhxform_textarea,
+.dhxform_obj_dhx_web .validate_warning .dhxform_select,
+.dhxform_obj_dhx_web .validate_warning div.dhxform_label_nav_link,
+.dhxform_obj_dhx_web .validate_warning div.dhxform_label div.dhxform_label_nav_link:focus {
+    color:  magenta;
+}
+
+.dhxform_obj_dhx_web .validate_modified .dhxform_label,
+.dhxform_obj_dhx_web .validate_modified .dhxform_textarea,
+.dhxform_obj_dhx_web .validate_modified .dhxform_select,
+.dhxform_obj_dhx_web .validate_modified div.dhxform_label_nav_link,
+.dhxform_obj_dhx_web .validate_modified div.dhxform_label div.dhxform_label_nav_link:focus {
+    color:  darkblue;
+}
+
+.dhxform_obj_dhx_web div.dhxform_label span.dhxform_info {
+    vertical-align: baseline;
+}
+
+.dhxform_obj_dhx_web div.error div.dhxform_txt_label2 {
+    color: red !important;
+}    
+
+.dhxform_obj_dhx_web div.disabled div.dhxform_btn {
+    border: 1px solid #c7c7c7;
+}
+
+
+.dhxform_obj_dhx_web div.disabled div.dhxform_btn {
+    background-color: #E8E8E8 !important;
+    border: none !important;
+}
+
+/****************************************************/
+/* фон иконок тулбара */
+/****************************************************/
+.dhx_toolbar_dhx_web div.dhx_toolbar_btn i,
+div.dhx_toolbar_poly_dhx_web td.td_btn_img i {
+    color: #ffffff;
+}
+
+/****************************************************/
+/* кнопка закрыть в окнах */
+/****************************************************/
+.dhxwins_vp_dhx_web div.dhxwin_hdr div.dhxwin_btns div.dhxwin_button.dhxwin_button_close {
+    background-position: -15px 0px;
+    background-color: #BF3030;
+    border-radius: 3px;
+}
+
+.dhxwins_vp_dhx_web div.dhxwin_active div.dhxwin_hdr div.dhxwin_btns div.dhxwin_button.dhxwin_button_close:hover {
+   background-position: -15px 0px;
+    background-color: red;
+    border-radius: 3px;
+}
+
+/****************************************************/
+/* иконока в гриде */
+/****************************************************/
+.dhx_grid_icon {
+    display: inline-table !important;
+}
+
+.dhx_grid_icon_left {
+  color: #777;
+  font-size: 18px;
+  display: inline-table !important;
+  height: 100%;
+  width: 100%;
+  min-height: 24px;
+  vertical-align:sub;
+}
+
+.dhx_grid_icon i,
+.dhx_grid_icon_left i{
+    color: #737cdd;
+}
+
+.rowselected .cellselected .photoReportGridFilename {
+    background-position: 0px;
+    background-image: url(../imgs/EmptyPhotoReport.png);
+    background-repeat: no-repeat;    
+}
+
+.rowselected .cellselected .cmdFileImg {
+    background-position: 0px;
+    background-image: url(../imgs/EmptyCmdImg.png);
+    background-repeat: no-repeat;
+}
+
+
+/****************************************************/
+/* модальные окна - фон */
+/****************************************************/
+.dhxwins_vp_dhx_web div.dhxwins_mcover {
+    opacity: .75 !important;
+}
+
+/****************************************************/
+/* мультивыбор в гриде */
+/****************************************************/
+div.dhx_clist {
+    font-family: Tahoma,Helvetica;
+    font-size: 12px;
+    color: black;
+    border: 1px solid rgb(164, 190, 212);
+    background: #f4f4f4;
+    box-shadow: 0 0 4px #AAA;
+}
+
+div.dhx_clist input[type=button] {
+    margin: 4px 2px 2px 2px;
+    font-size: 12px !important;
+}
+
+input, textarea, keygen, select, button {
+    font-size: 12px !important;
+    font-family: Tahoma,Helvetica !important;
+}
+div.dhx_clist input[type=button] {
+    -moz-appearance:textfield;
+}
+
+/****************************************************/
+/* для IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .dhxform_obj_dhx_web input.dhxform_textarea{
+        padding: 4px 0px !important;
+    }
+}
+
+/****************************************************/
+/* активная строка грида */
+/* везде заменил   #deefff на #EEEFFE */
+/****************************************************/
+div.gridbox_dhx_web.gridbox table.obj tr.rowselected td {
+    background-color: #EEEFFE;
+}
+
+div.gridbox_dhx_web.gridbox table.obj.row20px tr.rowselected td {
+    background-color: #EEEFFE;
+    border-right-color: #EEEFFE;
+    color: #000000;
+}
+
+div.gridbox_dhx_web.gridbox table.obj tr td.cellselected {
+    background-color: #DADCF2 !important;
+}
+
+/****************************************************/
+/* хинты в гриду
+/****************************************************/
+div.gridbox_dhx_web.gridbox table.hdr td .bb_info {
+    cursor: pointer;
+    color: #808080;
+}
+
+
+/****************************************************/
+/* высота заголовков таблицы /*
+/****************************************************/
+div.gridbox_dhx_web.gridbox table.hdr td div.hdrcell{
+    max-height: 54px;    
+}
+
+
+/****************************************************/
+/* эксперимент с подсветкой текущих едитов */
+/****************************************************/
+input.dhxcombo_input:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.dhxcombo_focused {
+    outline: none !important;
+    box-shadow: 0px 0px 6px #a4bed4 !Important;
+}
+
+/****************************************************/
+/* иконки */
+/****************************************************/
+i.color-red {
+  color: red !important;
+}
+
+i.color-blue {
+  color: blue !important;
+}
+
+i.color-green {
+  color: green !important;
+}
+
+i.disabled{
+    color:#bfd1db !important;
+}
+
+.dhxtoolbar_btn_dis i{
+    color:#bfd1db !important;
+}
+
+/****************************************************/
+/* в тулбаре запрещённое */
+/****************************************************/
+.dhx_toolbar_dhx_web div.dhx_toolbar_btn.dhxtoolbar_btn_dis,
+.dhx_toolbar_dhx_web div.dhx_toolbar_arw.dhxtoolbar_btn_dis {
+    color: #bfd1db;
+}
+
+div.dhx_toolbar_poly_dhx_web .tr_btn_disabled td {
+    color: #bfd1db !important;
+}
+
+/****************************************************/
+/* выключить в гугл картах контрол */
+/****************************************************/
+.gm-style iframe {
+    display: none;
+}
+
+/****************************************************/
+/* цвет popup по умолчанию */
+/****************************************************/
+div.dhx_popup_dhx_web div.dhx_popup_area {
+    background-color: #ffffcc;    
+}
+
+/****************************************************/
+/* цвет popup тулбара */
+/****************************************************/
+div.dhx_toolbar_poly_dhx_web .tr_btn_selected,
+div.dhx_toolbar_poly_dhx_web .tr_btn_selected td{
+    background-color: #737cdd !important;
+    color:white;
+}
+
+div.dhx_toolbar_poly_dhx_web,
+div.dhx_toolbar_poly_dhx_web td{
+    background-color: #959ce9 !important;
+    color:white;
+}
+div.dhx_toolbar_poly_dhx_web tr.tr_btn_over,
+div.dhx_toolbar_poly_dhx_web tr.tr_btn_over td{
+    background-color: #7e86dc !important;
+    color:white;
+}
+
+
+/****************************************************/
+/* цвет разделителя popup тулбара */
+/****************************************************/
+div.dhx_toolbar_poly_dhx_web div.btn_sep {
+    border-top: 1px dotted white;
+}
+
+/****************************************************/
+/* цвет popup тулбара */
+/****************************************************/
+.map_autocomplete {
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+    box-sizing: border-box;
+    font-size: 12px !important;
+    font-family: Tahoma,Helvetica !important;
+    height: 29px;
+    margin-left: 10px;
+    margin-top: 10px;
+    outline: none;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+
+/****************************************************/
+/* Btn2state */
+/****************************************************/
+div.dhxform_item_label_left.button2state0 div.dhxform_btn_txt:before,
+div.button2state0 div.dhxform_btn_txt:before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    content: "\f096";
+}
+div.dhxform_item_label_left.button2state1 div.dhxform_btn_txt,
+div.button2state1 div.dhxform_btn_txt{
+  background-color: #737cdd  !important;
+}
+div.dhxform_item_label_left.button2state1.disabled div.dhxform_btn_txt,
+div.button2state1.disebled div.dhxform_btn_txt:before{
+  background-color: lightgray  !important;
+}
+div.dhxform_item_label_left.button2state1 div.dhxform_btn_txt:before,
+div.button2state1 div.dhxform_btn_txt:before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 1px;
+    left: 6px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    content: "\f046";
+}
+
+
+/****************************************************/
+/* кнопки для карты гугл */
+/****************************************************/
+div.mapFitMarkersUI {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+div.mapFitMarkersUI:hover {
+      background-color: rgb(235,235,235);
+      border: 2px solid rgb(235,235,235);
+  }
+
+div.mapFitMarkersText {
+    color: black;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 11px;
+    line-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    user-select: none;
+  }
+
+  div.mapPageMarkersUI {
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+div.mapPageMarkersUI.left {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+  div.mapPageMarkersUI.right {
+    margin-right: 14px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  div.mapPageMarkersUI:hover {
+      background-color: rgb(235,235,235);
+      border: 2px solid rgb(235,235,235);
+  }
+
+div.mapPageMarkersText {
+    color: rgb(86, 86, 86);
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 11px;
+    line-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    user-select: none;
+}
+
+
+div.selected div.mapPageMarkersText {
+    color: black;
+    font-weight: 500;
+}
+div.mapPageMarkersText:hover {
+    color: black;
+  }
+
+/****************************************************/
+/* кнопки для карты гугл */
+/****************************************************/
+input.bbPlaceHolder{
+    font-family: FontAwesome,IstokWebRegular,sans-serif !important;
+}
+
+::-webkit-input-placeholder {color: lightgray;}
+::-moz-placeholder          {color: lightgray;}/* Firefox 19+ */
+:-moz-placeholder           {color: lightgray;}/* Firefox 18- */
+:-ms-input-placeholder      {color: lightgray !important; }

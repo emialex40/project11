@@ -1,0 +1,318 @@
+@keyframes foldup {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+@media screen and (max-device-width: 768px) {
+/*    html body header .login { 
+        width: 23%;
+        position: relative;
+        display: block;
+         text-align: center; 
+        margin: auto;
+        float: none;
+    }
+    html body header .Logo {
+         text-align: center; 
+        width: 50%;
+        float: none;
+        margin: auto;
+        display: block;
+    }
+    html body header .Logo .logo {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        cursor: pointer;
+        max-height: 100px;
+    }*/
+    html body .navmobile .mobile-menu .menu li.dropdown-top:hover .dropdown-inside {
+        display: block;
+        color: white;
+        background-color: transparent;
+        left: 0;
+        top: 0;
+        position: relative;
+        max-width: 0;
+        transition: all 0.4s ease-out;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    html body .navmobile .mobile-menu .menu li, html body .navmobile .mobile-menu .menu li.dropdown-top {
+        display: block;
+    }
+    html body nav {
+        display: none;
+    }
+    html body .navmobile {
+        display: block;
+    }
+}
+@font-face {
+  font-family: DaxlinePro; /* Имя шрифта */
+  src: url(DaxlinePro-Medium.otf); /* Путь к файлу со шрифтом */
+}
+html {
+    /*font-family: sans-serif; */
+    /*color: #ffffff;*/
+    /* height: 100%; */
+    /* width: 100%; */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* display: block; */
+    /* position: relative; */
+    background: #737cdd;    
+}
+
+header, nav {
+    color: #ffffff;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+header {
+    font-family: sans-serif;
+    display: table;
+    position: relative;
+    width: 100%;
+}
+header .Logo {
+    text-align: center;
+    /* width: 80%; */
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+header .Logo .logo {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    cursor: pointer;
+    margin: 2px 5px 0 2px;
+}
+
+header .Logo .logo-text{
+    margin-top: -14px;
+    height: 35px;
+}
+
+/* для кэширования иконки только, чтобы отобразить когда связь пропадёт у сообщений */
+header .Logo .logo-text .logo-slog:before {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    font-family: 'FontAwesome';
+    content: "\f127";
+}
+
+header .Logo .logo-text .logo-slog {
+    font-family: DaxlinePro;
+    color: #f8c9b9;
+    font-size: 11px;
+    position: relative;
+    left: 38px;
+    top: -8px;
+}
+header .Logo .logo-text .logo-tel {
+    font-family: sans-serif;
+    color: white;
+    position: relative;
+    left: 30px;
+    top: -8px;
+}
+header .login {
+    padding: 0 10px 0 10px;
+    line-height: 18px;
+    float: right;
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    min-width: 155px;
+}
+
+
+header .login .header-control .msg.error:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    color: bisque;
+    content: "\f127";
+}
+
+header .login .header-control .msg {
+    border-radius: 25%;
+    display: inline-block;
+    padding: 0 3px 0 3px;
+}
+
+header .login .header-control .msg.all {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+header .login .header-control .msg.immediate {
+    background: fuchsia;
+    color: white;
+    cursor: pointer;
+}
+
+header .login a {
+    color: white;
+    line-height: 21px;
+    text-align: right;
+    display: inline-block;
+    position: relative;
+}
+header .login a.logout:visited
+header .login a.changeInterface:visited {
+    color: white;
+}
+
+header .login a.logout,
+header .login a.changeInterface {
+    /* left: 15px; */
+    float: right;
+    color: white;
+}
+nav ul li.li-disable {
+    /*background-color: rgba(247, 176, 154, 0.5);*/
+    color: #bfd1db;
+    pointer-events: none;
+    cursor: default;
+}
+header .login a.logout:hover,
+header .login a.changeInterface:hover {
+    color: #f5f5f5;
+}
+nav {
+    font-family: sans-serif;
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: 31px;    
+    line-height: 22px;
+}
+
+nav.menu1 {
+    background-color: rgba(247, 176, 154, 0.62);
+}
+nav.menu2 {
+    background-color: rgba(247, 176, 154, 0.78);
+}
+
+nav ul li.li-immediate{
+    background: fuchsia !important;
+}
+
+nav ul li.li-active {
+    background-color: rgba(247, 176, 154, 0.5);
+}
+nav ul li.li-disable {
+    /*background-color: rgba(247, 176, 154, 0.5);*/
+    color: #bfd1db;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+nav ul li:active {
+    background-color: rgba(247, 176, 154, 0.5);
+}
+nav ul.menu {
+    vertical-align: top;
+    text-decoration: none;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    display: table;
+}
+.navmobile .mobile-menu ul.menu {
+    vertical-align: top;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: table;
+}
+nav .menu li, .navmobile .mobile-menu .menu li {
+    -decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+}
+nav .menu li a, .navmobile .mobile-menu .menu li a {
+    position: relative;
+    display: block;
+    text-decoration: inherit;
+    color: inherit;
+}
+nav .menu li a:hover, .navmobile .mobile-menu .menu li a:hover {
+    color: #FAFAFA;
+}
+nav .menu ul.dropdown-top, .navmobile .mobile-menu .menu ul.dropdown-top {
+    list-style: circle;
+}
+nav .menu ul.dropdown-top, nav .menu ul.dropdown-inside, .navmobile .mobile-menu .menu ul.dropdown-top, .navmobile .menu ul.dropdown-inside {
+    display: none;
+    /*height: 0;*/
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+}
+nav .menu ul.dropdown-top ul.dropdown-inside, .navmobile .mobile-menu .menu ul.dropdown-top ul.dropdown-inside {
+    position: absolute;
+    left: -9999px;
+}
+nav .menu li.dropdown-top, .navmobile .mobile-menu .menu li.dropdown-top {
+    display: inline-block;
+}
+nav ul.menu li.dropdown-top a, .navmobile .mobile-menu ul.menu li.dropdown-top a {
+    display: block;
+}
+nav .menu li.dropdown-top:hover .dropdown-inside, .navmobile .mobile-menu .menu li.dropdown-top:hover .dropdown-inside {
+    /*animation: foldup .7s linear normal 1;*/
+    /*height: auto;*/
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+    display: block;
+    color: white;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: #737cdd;
+    z-index: 300;
+    top: 28px;
+}
+nav .menu li.dropdown-top:hover .dropdown-inside li, .navmobile .mobile-menu .menu li.dropdown-top:hover .dropdown-inside li {
+    border-bottom: 1px solid #c59cb3;
+    display: block;
+    left: 0;
+}
+nav .menu .dropdown-inside a:hover, .navmobile .mobile-menu .menu .dropdown-inside a:hover {
+    /* background: #424242; */
+}
+.navmobile {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.navmobile .mobile-menu {
+    width: 235px;
+    /* background: white; */
+    display: none;
+}
+.navmobile .mobmenu {
+    display: inline-block;
+    vertical-align: top;
+}

@@ -1,0 +1,60 @@
+@media all and (max-width: 768px) {
+    html body .Center .Login button.log {
+        font-size: 15px;
+        left: 0;
+    }
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 !important;
+}
+.Main {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    vertical-align: middle;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: rgb(84, 88, 177);  
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+.Center {
+    padding: 0;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+.Center .Logo img {
+    width: 100%;
+    height: 100%;
+    max-width: 630px;
+    max-height: 125px;
+}
+.Center .Login {
+    padding-top: 20px;
+}
+.Center .Login button.log {
+    border: none;
+    -webkit-box-shadow: 0 0 10px #ffff00;
+    -moz-box-shadow: 0 0 10px #ffff00;
+    box-shadow: 0 0 10px #ffff00;
+    font-family: 'Oswald', sans-serif;
+    color: #40476a;
+    font-size: 20px;
+    background: #ffff00;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    left: 60px;
+    position: relative;
+}
+.Center .Login button.log:hover {
+    background: #ffff7c;
+    text-decoration: none;
+}
