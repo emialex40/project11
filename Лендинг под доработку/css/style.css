@@ -680,7 +680,8 @@ label.error{
 
 .bid__form-wrap form {
 	display: block;
-	width: 100%;
+	width: 40%;
+	margin: 0 auto;
 }
 
 .bid_btns {
@@ -697,7 +698,7 @@ label.error{
 
 
 .bid__table {
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	font-family: 'OpenSans', serif;
 	font-size: 14px;

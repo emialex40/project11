@@ -97,14 +97,18 @@ $(document).ready(function() {
 		if(city === err) {
 			alert('Пожалуйста, выберите город!');
 		} else {
-			$('.bid_test').text('Вы выбрали город - ' + city);
+			$('.bid_test').text('Вы выбрали ' + title);
 			$('#bid_constr').val(title);
 			$('#bid_ct').val(city);
+            $('html, body').animate({
+                scrollTop: $("#bid__form-wrap").offset().top
+            }, 1000);
 		}
 	});
 
 
-	var obj = [];
+	var bidArray = [];
+
 	function formCollector() {
 		var bidFirm = $('#bid_firm').val();
 		var bidName = $('#bid_name').val();
@@ -118,38 +122,67 @@ $(document).ready(function() {
 		var bidPrice = $('#bid_price').val();
 		var bidObjects = $('#bid_objects').val();
 
-		var arr = [];
-		arr.push(bidFirm, bidName, bidPhone, bidConstr, bidCity, bidQuantity, bidRadio, bidDate1, bidDate2, bidPrice, bidObjects);
+		var arr = {};
+        arr = {
+            city: bidCity,
+            firm: bidFirm,
+            name: bidName,
+            phone: bidPhone,
+            construction: bidConstr,
+            quantity: bidQuantity,
+            type: bidRadio,
+            date1: bidDate1,
+            date2: bidDate2,
+            price: bidPrice,
+            objects: bidObjects
+        };
+        console.log(arr);
+		//arr.push(bidFirm, bidName, bidPhone, bidConstr, bidCity, bidQuantity, bidRadio, bidDate1, bidDate2, bidPrice, bidObjects);
 
 		$('.tbl').append('<tr>' +
-		'<td>' +  arr[3] + '</td>' +
-		'<td>' + arr[5] + '</td>' +
-		'<td>' + arr[6] + '</td>' +
-		'<td>' + arr[7] + '</td>' +
-		'<td>' + arr[8] + '</td>' +
-		'<td>' + arr[9] + '</td>' +
-		'<td>' + arr[10] + '</td></tr>');
+            '<td class="val">' +  bidConstr + '</td>' +
+            '<td class="val">' + bidQuantity + '</td>' +
+            '<td class="val">' + bidRadio + '</td>' +
+            '<td class="val">' + bidDate1 + '</td>' +
+            '<td class="val">' + bidDate2 + '</td>' +
+            '<td class="val">' + bidPrice + '</td>' +
+            '<td class="val">' + bidObjects + '</td>' +
+            '<td class="tb_remove"><button class="remove" id ="' + x + '">Удалить</button></td>' +
+        '</tr>');
 
-		obj.push(arr);
-		console.log(obj);
+        bidArray.push(arr);
+        console.log(bidArray);
+        $('.remove').on('click', function() {
+            $(this).parent().parent().remove();
+            var y = $(this).attr('id');
+            delete bidArray[y];
+        });
 	}
 
+
+    var x = 0;
 	$('.add_to').on('click', function() {
 		formCollector();
+        x = x + 1;
 		$('.add__txt').text('Запись добавлена к заявке');
+        $('html, body').animate({
+            scrollTop: $("#bid__table").offset().top
+        }, 1000);
 	});
 
 
 
-	$('.tb_remove').on('click', function() {
-		$(this).siblings('.val').text('');
-	});
+
 
 	$('.bid_clear').on('click', function() {
-		$('#bid_radio1').prop('checked', true);
-		$('#form_form input').val('');
-		$('.val').text('');
+		location.reload();
 	});
+
+    $('.bid_begin').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $("#bid__head").offset().top
+        }, 700);
+    });
 //bid-js file end
 
 	//falidation bid-form
@@ -206,14 +239,18 @@ $(document).ready(function() {
 		focusCleanup: true,
 		focusInvalid: false,
 		submitHandler: function(form) {
-			$(form).ajaxSubmit({
-				url: 'registerRequest.do',
+            event.preventDefault();
+            var jsonArr = {};
+            jsonArr = JSON.stringify(bidArray);
+            console.log(jsonArr);
+ 				$.ajax({
+				url: 'post.php',
 				type: 'POST',
-				data: obj,
+				data: jsonArr,
 				dataType: "json",
 				success: function(){
 					alert('Успешная отправка');
-					$('#form_form').hide();
+					//$('#form_form').hide();
 				}
 			});
 		}
